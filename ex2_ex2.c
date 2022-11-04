@@ -3,7 +3,10 @@
 #include <unistd.h>
 
 int main(){
-	int pid_t = getpid();
-	printf("p ID is: %d\n",pid_t);
+	int pid_a = getpid();
+	int ppid_x = getppid();
+	
+	printf("process ID is: %d\n",pid_a);
+	printf("parent process ID is: %d\n",ppid_x);
 	return 0;
 }
